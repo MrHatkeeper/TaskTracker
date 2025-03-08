@@ -1,9 +1,9 @@
 let tasksFolder = "/tasks"
 
 function createTask() {
-    let name = document.getElementById("name").value;
-    let date = document.getElementById("date").value;
-    let text = document.getElementById("text").value;
+    let name = (document.getElementById("name") as HTMLInputElement).value;
+    let date = (document.getElementById("date") as HTMLInputElement).value;
+    let text = (document.getElementById("text") as HTMLInputElement).value;
 
     let output = '{' +
         '"Name":"' + name + '",' +
